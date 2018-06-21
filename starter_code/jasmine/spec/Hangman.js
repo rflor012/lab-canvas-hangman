@@ -50,7 +50,7 @@ describe('Hangman Game', function () {
     });
 
     it('checkIfLetter should return true', function () {
-      expect(hangman.checkIfLetter(76)).toEqual(true);
+      expect(hangman.checkIfLetter('A')).toEqual(true);
     });
   });
 
@@ -90,8 +90,8 @@ describe('Hangman Game', function () {
     });
     it('addCorrectLetter should add letters to guessedLetter string', function () {
       hangman.secretWord = 'Ironhack';
-      hangman.addCorrectLetter(1);
-      expect(hangman.guessedLetter).toEqual('R');
+      hangman.addCorrectLetter("r");
+      expect(hangman.guessedLetters).toEqual('r');
     });
   });
 
